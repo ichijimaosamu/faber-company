@@ -1,0 +1,6 @@
+.l-bodyInner {
+	@include pc() {
+		min-width: 1160px;
+	}
+  min-height: 100%;
+}

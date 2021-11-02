@@ -1,0 +1,49 @@
+.l-footer {
+	background-color: #FFF;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 1000px;
+		height: 70px;
+		margin: auto;
+		@include sp() {
+			display: block;
+			width: 94%;
+			margin: auto;
+			height: auto;
+			padding: 4% 0;
+		}
+	}
+
+	&__logo {
+		@include sp() {
+			width: (110%/375) * 100;
+			margin: auto;
+			text-align: center;
+		}
+
+		img {
+			@include sp() {
+				height: auto;
+			}
+		}
+	}
+
+	&__text {
+		font-size: 11px;
+		@include sp() {
+			margin-top: 2%;
+			@include fz_vw(10);
+			line-height: 1.2;
+			text-align: center;
+		}
+
+		a {
+			&:first-of-type {
+				margin-left: 10px;
+			}
+		}
+	}
+}

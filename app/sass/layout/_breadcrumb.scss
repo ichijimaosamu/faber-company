@@ -1,0 +1,48 @@
+.p-topicpath {
+	padding: 13px 0px;
+	background: #EEE;
+	@include sp() {
+		display: none;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		@include pc() {
+			width: 1100px;
+			margin: auto;
+		}
+	}
+
+	&__item {
+		position: relative;
+		margin-right: 30px;
+
+		&:after {
+			content: "";
+			position: absolute;
+			right: -20px;
+			top: 3px;
+			width: 10px;
+			height: 10px;
+			border-style: solid;
+			border-width: 2px;
+			border-color: transparent transparent #C8C9CA #C8C9CA;
+			transform: rotate(-135deg);
+		}
+
+		&:last-child {
+			margin-right: 0;
+
+			&:after {
+				content: none;
+			}
+		}
+
+		a {
+			color: #3E3A39;
+			font-size: 13px;
+		}
+	}
+}

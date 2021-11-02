@@ -1,0 +1,193 @@
+.l-header {
+	box-shadow: 0 2px 2px rgba(#000, .2);
+	font-family: "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "游ゴシック", YuGothic, "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", Helvetica, Arial, sans-serif;
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		width: 1000px;
+		margin: auto;
+		padding: 28px 0 27px;
+		@include sp() {
+			display: block;
+			width: auto;
+			height: 45px;
+			padding: 0;
+			background-color: #68A9D1;
+		}
+	}
+
+	&__left {
+		@include sp() {
+			margin-bottom: 3%;
+		}
+	}
+
+	&__right {
+		display: flex;
+		justify-content: space-between;
+		@include sp() {
+			display: none;
+		}
+	}
+
+	&__logo {
+		margin-top: 20px;
+		@include sp() {
+			position: relative;
+			left: 15px;
+			top: 12px;
+			width: 150px;
+			height: 20px;
+			margin-top: 0;
+			background-size: 100%;
+			padding-top: 0;
+			background-image: url("https://mieru-ca.com/resources/images/common/logo_sp.png");
+		}
+
+		a {
+			@include sp() {
+				position: absolute;
+				height: 20px;
+				width: 150px;
+			}
+		}
+
+		img {
+			@include sp() {
+				display: none;
+			}
+		}
+	}
+
+	&__info {
+		margin-right: 20px;
+		@include sp() {
+			order: 2;
+		}
+
+		&__text {
+			margin-bottom: 10px;
+			color: #4A4A4A;
+			font-weight: bold;
+			@include sp() {
+				margin-bottom: 4%;
+				@include fz_vw(10);
+			}
+		}
+
+		&__time {
+			margin-bottom: 13px;
+			color: #4A4A4A;
+			@include fz(12);
+			font-weight: bold;
+			@include sp() {
+				margin-bottom: 7%;
+				@include fz_vw(10);
+			}
+
+			span {
+				padding: 4px 14px;
+				margin-right: 10px;
+				@include fz(10);
+				font-weight: bold;
+				letter-spacing: .2px;
+				border-radius: 6px;
+				border: 1px solid #979797;
+				@include sp() {
+					margin-right: 2%;
+					padding: 0.5% 3% 1%;
+					@include fz_vw(10);
+				}
+			}
+		}
+
+		&__btn {
+			a {
+				display: inline-block;
+				padding: 5px;
+				color: #75B5DD;
+				@include fz(12);
+				border: solid 2px #75B5DD;
+				border-radius: 3px;
+				transition: .4s;
+				@include sp() {
+					@include fz_vw(12);
+				}
+
+				&:hover {
+					color: #fff;
+					background: #75B5DD;
+				}
+
+				&:first-child {
+					@include sp() {
+						margin-right: 2%;
+					}
+				}
+			}
+		}
+	}
+
+	&__tel {
+		color: #4a4a4a;
+		display: flex;
+		@include sp() {
+			order: 1;
+			margin-bottom: 2%;
+		}
+
+		span {
+			display: inline-block;
+			position: relative;
+			top: -5px;
+			width: 42px;
+			height: 42px;
+			margin-right: 5px;
+			border: 3px solid #4a4a4a;
+			border-radius: 50%;
+			text-align: center;
+			@include sp() {
+				width: 27px;
+				height: 27px;
+				border-width: 2px;
+			}
+
+			i {
+				position: absolute;
+				left: 7px;
+				top: 5px;
+				@include fz(28);
+				@include sp() {
+					left: 6px;
+					@include fz_vw(14);
+				}
+			}
+		}
+
+		a {
+			display: inline-block;
+			@include fz(31);
+			font-weight: 400;
+			letter-spacing: 1px;
+			@include sp() {
+				@include fz_vw(24);
+			}
+
+			&:hover,
+			&:hover * {
+				opacity: 1;
+			}
+		}
+
+		small {
+			display: block;
+			margin-top: 5px;
+			@include fz(20);
+			@include sp() {
+				display: inline-block;
+				@include fz_vw(14);
+			}
+		}
+	}
+}

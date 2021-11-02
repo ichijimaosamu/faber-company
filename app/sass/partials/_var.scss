@@ -1,0 +1,16 @@
+$img_path:        '/files/user/images/';
+$base_font_size:  14;
+$base_font_color: #000;
+
+$c_main:          #213C6D;
+$c_white:         #fff;
+$c_border:        #ccc;
+
+$break_point:     768px; // @include pc/sp(){...} で参照されるブレイクポイント
+$break_point2:     1399px;
+$grid_split_num:  12; // Gridの分割
+
+$font_goth:"メイリオ" , Meiryo , "ヒラギノ角ゴ Pro W3" , "Hiragino Kaku Gothic Pro" , "ＭＳ Ｐゴシック" , "MS PGothic", arial, helvetica, sans-serif;
+$font_goth_old:"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo","ＭＳ Ｐゴシック",sans-serif;
+$font_min:"Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+$font_min_old:'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;

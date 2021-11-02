@@ -1,0 +1,4 @@
+node_modules/
+npm-debug.log
+app/movie/movie.mp4
+template_ejs/
