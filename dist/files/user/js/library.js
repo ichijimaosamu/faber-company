@@ -107,8 +107,8 @@
    followingBlock.hide();
 
    $(window).scroll(function() {
-      var scroll = $(this).scrollTop();    
-      
+      var scroll = $(this).scrollTop();
+
       if(scroll >= 300 && scroll < scrollHeight2) {
         followingBlock.fadeIn();
       } else if(scroll < 300 || scroll >= scrollHeight2) {
@@ -213,15 +213,11 @@
         $(this).closest('[data-js="accordion-box"]').addClass('is-active');
       }
     });
-    
 
-    var $winWidth = $(window).width();
-    if($winWidth < 1341) {
-      $('.p-footer__lower__heading').on('click', function() {
-        $(this).parent().find('.-accordion').slideToggle(200);
-        $(this).toggleClass("-is-open");
-      });
-    }
+    $('.p-search__heading__text').on('click', function() {
+      $(this).parents('.p-search__heading').next().slideToggle(200);
+      $(this).toggleClass("-is-open");
+    });
     /****************************************/
 
     $('[data-js="toggle-globalNav"]').on('click', function() {
@@ -258,90 +254,6 @@
       return false;
     }
     /****************************************/
-
-    /* パララックス
-     ***************************************/
-    var parallaxBkImg = function(){
-      $(window).on('load resize', function() {
-        $(window).on('load scroll', function(){
-          var $winTop = $(window).scrollTop();
-          var $target = $('.p-parallaxBlock');
-          var $winWidth = $(window).width();
-          if($winWidth < 1341) {
-            $target.each(function(index){
-              var $position = $winTop - $target.eq(index).offset().top;
-              if($winTop > $target.eq(index).offset().top - 800) {
-                $target.eq(index).css({
-                  'background-position-y': $position * .4
-                });
-              }
-            });
-          }
-        });
-      });
-    }();
-    /****************************************/
-
-    /* スライダー（slickslider）
-     ***************************************/
-    if($('.l-container').hasClass('-recruit')) {
-      $('.p-gallery__list').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        prevArrow: '<img src="/files/user/images/slickslider/slick_arrow_prev.png" class="slick-prev slick-arrow">',
-        nextArrow: '<img src="/files/user/images/slickslider/slick_arrow_next.png" class="slick-next slick-arrow">',
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 3
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              arrows: false,
-              centerMode: true,
-              centerPadding: '40px',
-              slidesToShow: 1
-            }
-          }
-        ]
-      });
-    }
-    /***************************************/
-    
-    /* Q&A
-     ***************************************/
-    if($('.l-container').hasClass('-recruit')) {
-      $(function(){
-        var flg = "default";
-        $('.p-qa__box .more').click(function(){
-          if(flg == "default"){
-            $(this).text("閉じる");
-            flg = "changed";
-            $(this).prev('.p-qa__box__list').css({
-              'height': 'auto',
-              'overflow': 'inherit'
-            });
-            $(this).addClass("is-open");
-          }else{
-            $(this).text("もっと見る");
-            flg = "default";
-            $(this).prev('.p-qa__box__list').css({
-              'height': '117px',
-              'overflow': 'hidden'
-            });
-            $(this).removeClass("is-open");
-          }
-        });
-      });
-    }
-    /***************************************/
 
   });
 })(jQuery);

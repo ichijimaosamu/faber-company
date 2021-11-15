@@ -7628,6 +7628,249 @@ category:
     .p-request__form__submit input:hover {
       opacity: .75; }
 
+#seminar-list .p-main-visual__bg {
+  height: 280px;
+  padding-top: 60px;
+  background: url("../images/seminar_list/main_visual_bg.jpg") center top no-repeat;
+  background-size: cover; }
+
+#seminar-list .p-main-visual__company {
+  margin-bottom: 50px;
+  text-align: center; }
+
+#seminar-list .p-main-visual__heading {
+  color: #FFF;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 6px #000; }
+
+#seminar-list .p-main-visual__logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 1100px;
+  height: 70px;
+  margin: auto; }
+
+#seminar-list .p-search__heading {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 70px;
+  background: #0074C1;
+  text-align: center; }
+  #seminar-list .p-search__heading__text {
+    position: relative;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer; }
+    #seminar-list .p-search__heading__text:before, #seminar-list .p-search__heading__text:after {
+      position: absolute;
+      content: ""; }
+    #seminar-list .p-search__heading__text:before {
+      left: -38px;
+      width: 22px;
+      height: 24px;
+      background: url("../images/seminar_list/icon_search.png") left top no-repeat; }
+    #seminar-list .p-search__heading__text:after {
+      right: -38px;
+      width: 24px;
+      height: 24px;
+      background: url("../images/seminar_list/arrow_open.png") left top no-repeat; }
+    #seminar-list .p-search__heading__text.-is-open:after {
+      background: url("../images/seminar_list/arrow_close.png") left top no-repeat; }
+
+#seminar-list .p-search__accordion {
+  display: none;
+  position: relative;
+  padding: 30px 0;
+  background: #0074C1; }
+  #seminar-list .p-search__accordion:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    margin: auto;
+    background: #FFF;
+    content: ""; }
+
+#seminar-list .p-search__list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: -18px auto 0; }
+
+#seminar-list .p-search__item {
+  margin: 18px 25px 0 0; }
+  #seminar-list .p-search__item a {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-width: 100px;
+    padding: 7px 25px 8px;
+    border-radius: 6px;
+    background: #FFF;
+    color: #0074C1;
+    font-size: 15px;
+    font-weight: 500; }
+
+#seminar-list .p-seminar {
+  padding: 100px 0 85px; }
+  #seminar-list .p-seminar:nth-of-type(odd) {
+    background: #e7f2fb; }
+    #seminar-list .p-seminar:nth-of-type(odd) .p-seminar__item__detail {
+      background: #FFF; }
+  #seminar-list .p-seminar.-pickup {
+    background: #5db2e2;
+    /* Old browsers */
+    /* FF3.6-15 */
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5db2e2 0%, #dbeeff 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2e2', endColorstr='#dbeeff',GradientType=0 );
+    /* IE6-9 */ }
+  #seminar-list .p-seminar__heading {
+    position: relative;
+    margin-bottom: 75px;
+    color: #0A4EA1;
+    font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center; }
+    #seminar-list .p-seminar__heading:after {
+      position: absolute;
+      right: 0;
+      bottom: -30px;
+      left: 0;
+      width: 40px;
+      height: 4px;
+      margin: auto;
+      background: #90CAEB;
+      content: ""; }
+    #seminar-list .p-seminar__heading.-pickup {
+      color: #FFF;
+      font-size: 40px; }
+      #seminar-list .p-seminar__heading.-pickup:before {
+        position: absolute;
+        top: -43px;
+        right: 0;
+        left: 0;
+        width: 77px;
+        height: 24px;
+        margin: auto;
+        background: url("../images/seminar_list/seminar_heading_pickup_bg.png") left top no-repeat;
+        content: ""; }
+      #seminar-list .p-seminar__heading.-pickup:after {
+        background: #FFF; }
+  #seminar-list .p-seminar__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 1100px;
+    margin: -40px auto 0; }
+  #seminar-list .p-seminar__item {
+    width: 340px;
+    margin: 40px 40px 0 0; }
+    #seminar-list .p-seminar__item:nth-child(3n) {
+      margin-right: 0; }
+    #seminar-list .p-seminar__item__detail {
+      padding: 20px 25px 25px;
+      background: #eff7fc; }
+    #seminar-list .p-seminar__item__heading {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.22222; }
+    #seminar-list .p-seminar__item__info {
+      margin-bottom: 20px;
+      font-size: 13px;
+      line-height: 1.61538; }
+    #seminar-list .p-seminar__item__tag {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: -6px 0 18px 0; }
+      #seminar-list .p-seminar__item__tag__text {
+        margin: 6px 6px 0 0;
+        padding: 3px 9px;
+        border: 1px solid #0074C1;
+        border-radius: 4px;
+        background: #FFF;
+        color: #0074C1;
+        font-size: 12px; }
+    #seminar-list .p-seminar__item__link a {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 40px;
+      border-radius: 10px;
+      background: #0074c1;
+      /* Old browsers */
+      /* FF3.6-15 */
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to right, #0074c1 0%, #68caef 100%);
+      /* IE6-9 */
+      color: #FFF;
+      font-size: 13px;
+      font-weight: 700;
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0074c1', endColorstr='#68caef',GradientType=1 ); }
+  #seminar-list .p-seminar__more {
+    width: 1100px;
+    margin: 55px auto 0; }
+    #seminar-list .p-seminar__more:after {
+      display: table;
+      clear: both;
+      content: ""; }
+    #seminar-list .p-seminar__more a {
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 250px;
+      height: 40px;
+      padding-left: 10px;
+      float: right;
+      border: 2px solid #0074C1;
+      border-radius: 10px;
+      color: #0074C1;
+      font-size: 14px;
+      font-weight: 700; }
+      #seminar-list .p-seminar__more a:before {
+        position: absolute;
+        top: 15px;
+        left: 50px;
+        width: 8px;
+        height: 8px;
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        border-top: 3px solid #0074C1;
+        border-right: 3px solid #0074C1;
+        content: ""; }
+
 /* utility ----------------------------- */
 
 .u-ma-0 {
@@ -8717,6 +8960,93 @@ category:
         padding: 5% 0;
         font-size: 16px;
         font-size: 4.26667vw; }
+    #seminar-list .p-main-visual__bg {
+      height: auto;
+      padding: 8% 0; }
+    #seminar-list .p-main-visual__company {
+      width: 80%;
+      margin: 0 auto 4%; }
+    #seminar-list .p-main-visual__heading {
+      font-size: 26px;
+      font-size: 6.93333vw; }
+    #seminar-list .p-main-visual__logo {
+      display: none;
+      width: auto; }
+    #seminar-list .p-search__heading {
+      height: auto;
+      padding: 3% 0 4%; }
+      #seminar-list .p-search__heading__text {
+        font-size: 14px;
+        font-size: 3.73333vw; }
+        #seminar-list .p-search__heading__text:before {
+          content: none; }
+        #seminar-list .p-search__heading__text:after {
+          top: 18%;
+          right: -20px;
+          width: 12px;
+          height: 12px;
+          background: url("../images/seminar_list/arrow_open.png") left top no-repeat;
+          background-size: contain; }
+        #seminar-list .p-search__heading__text.-is-open:after {
+          background: url("../images/seminar_list/arrow_close.png") left top no-repeat;
+          background-size: contain; }
+    #seminar-list .p-seminar {
+      padding: 12% 0 8%; }
+      #seminar-list .p-seminar__heading {
+        margin-bottom: 10%;
+        font-size: 20px;
+        font-size: 5.33333vw; }
+        #seminar-list .p-seminar__heading:after {
+          bottom: -12px;
+          height: 2px; }
+        #seminar-list .p-seminar__heading.-pickup {
+          font-size: 24px;
+          font-size: 6.4vw; }
+          #seminar-list .p-seminar__heading.-pickup:before {
+            top: -20px;
+            width: 38.5px;
+            height: 12px;
+            background: url("../images/seminar_list/seminar_heading_pickup_bg.png") left top no-repeat;
+            background-size: contain; }
+      #seminar-list .p-seminar__list {
+        width: 90%;
+        margin: -7% auto 0; }
+      #seminar-list .p-seminar__item {
+        width: auto;
+        margin: 7% auto 0; }
+        #seminar-list .p-seminar__item__detail {
+          padding: 5%; }
+        #seminar-list .p-seminar__item__heading {
+          margin-bottom: 4%;
+          font-size: 18px;
+          font-size: 4.8vw; }
+        #seminar-list .p-seminar__item__info {
+          margin-bottom: 4%;
+          font-size: 13px;
+          font-size: 3.46667vw; }
+        #seminar-list .p-seminar__item__tag {
+          margin: -3% 0 6% 0; }
+          #seminar-list .p-seminar__item__tag__text {
+            margin: 3% 2% 0 0;
+            padding: 2% 4%; }
+        #seminar-list .p-seminar__item__link a {
+          height: auto;
+          padding: 5% 0;
+          font-size: 14px;
+          font-size: 3.73333vw; }
+      #seminar-list .p-seminar__more {
+        width: auto;
+        margin: 10% auto 5%; }
+        #seminar-list .p-seminar__more a {
+          width: 80%;
+          margin: auto;
+          padding: 5%;
+          float: none;
+          font-size: 14px;
+          font-size: 3.73333vw; }
+          #seminar-list .p-seminar__more a:before {
+            top: unset;
+            left: 18%; }
   .is-pc {
     display: none !important; }
   .is-sp {

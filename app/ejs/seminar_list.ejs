@@ -1,0 +1,264 @@
+<%
+var page = 'seminar-list';
+var title = 'セミナー・イベント情報';
+%>
+@@include('app/ejs/_include/head.ejs')
+@@include('app/ejs/_include/header.ejs')
+@@include('app/ejs/_include/breadcrumb.ejs')
+
+
+<main class="l-container">
+
+<div class="p-main-visual">
+<div class="p-main-visual__bg">
+<p class="p-main-visual__company"><img src="/files/user/images/seminar_list/main_visual_company.png" alt="株式会社Faber Company"></p>
+<h1 class="p-main-visual__heading">セミナー・イベント情報</h1>
+</div>
+
+<ul class="p-main-visual__logo">
+<li class="p-main-visual__logo__item"><img src="/files/user/images/seminar_list/main_visual_logo_mieruca.png" alt="MIERUCA"></li>
+<li class="p-main-visual__logo__item"><img src="/files/user/images/seminar_list/main_visual_logo_heatmap.png" alt="MIERUCA HEATMAP"></li>
+<li class="p-main-visual__logo__item"><img src="/files/user/images/seminar_list/main_visual_logo_connect.png" alt="MIERUCA CONNECT"></li>
+<li class="p-main-visual__logo__item"><img src="/files/user/images/seminar_list/main_visual_logo_local.png" alt="LOCAL MIERUCA"></li>
+<li class="p-main-visual__logo__item"><img src="/files/user/images/seminar_list/main_visual_logo_douga.png" alt="DOUGA MIERUCA"></li>
+<li class="p-main-visual__logo__item"><img src="/files/user/images/seminar_list/main_visual_logo_dekiruca.png" alt="DEKIRUCA"></li>
+</ul>
+</div>
+
+<div class="p-search">
+<div class="p-search__inner">
+<h2 class="p-search__heading"><span class="p-search__heading__text">課題・難易度別にセミナーを探す</span></h2>
+
+<div class="p-search__accordion">
+<ul class="p-search__list">
+<li class="p-search__item"><a href="#">#Web集客</a></li>
+<li class="p-search__item"><a href="#">#CV改善</a></li>
+<li class="p-search__item"><a href="#">#店舗集客</a></li>
+<li class="p-search__item"><a href="#">#Webマーケ人材</a></li>
+<li class="p-search__item"><a href="#">#代理店案件獲得</a></li>
+<li class="p-search__item"><a href="#">#超初級</a></li>
+<li class="p-search__item"><a href="#">#初級</a></li>
+<li class="p-search__item"><a href="#">#中級</a></li>
+<li class="p-search__item"><a href="#">#上級</a></li>
+<li class="p-search__item"><a href="#">#EC</a></li>
+<li class="p-search__item"><a href="#">#代理店</a></li>
+</ul>
+</div>
+
+</div>
+</div>
+
+<section class="p-seminar -pickup">
+<h2 class="p-seminar__heading -pickup">注目セミナー</h2>
+
+<ul class="p-seminar__list">
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+
+<section class="p-seminar -regular">
+<h2 class="p-seminar__heading -regular">定期開催セミナー</h2>
+
+<ul class="p-seminar__list">
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+
+<section class="p-seminar -digital">
+<h2 class="p-seminar__heading -digital">動画で学ぶデジタルマーケティング</h2>
+
+<ul class="p-seminar__list">
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+
+<section class="p-seminar -past">
+<h2 class="p-seminar__heading -past">過去開催セミナー</h2>
+
+<ul class="p-seminar__list">
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+<li class="p-seminar__item">
+<dl>
+<dt class="p-seminar__item__pic"><img src="/files/user/images/seminar_list/seminar_item_pic.jpg" alt="「進撃のコンマケ塾」集客コンテンツプロジェクト"></dt>
+<dd class="p-seminar__item__detail">
+<p class="p-seminar__item__heading">「進撃のコンマケ塾」集客コンテンツプロジェクト</p>
+<p class="p-seminar__item__info">開催日：2021年◯月△日(木)　15:00～16:00<br>
+場所：オンライン(Zoom)</p>
+<ul class="p-seminar__item__tag">
+<li class="p-seminar__item__tag__text">#Web集客</li>
+<li class="p-seminar__item__tag__text">#初級</li>
+</ul>
+<p class="p-seminar__item__link"><a href="#">詳しく見る</a></p>
+</dd>
+</dl>
+</li>
+</ul>
+
+<p class="p-seminar__more"><a href="#">さらに詳しく見る</a></p>
+
+</section>
+
+</main>
+
+@@include('app/ejs/_include/footer.ejs')

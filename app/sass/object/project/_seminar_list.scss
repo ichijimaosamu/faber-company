@@ -1,0 +1,394 @@
+#seminar-list {
+	.p-main-visual {
+		&__bg {
+			height: 280px;
+			padding-top: 60px;
+			background: url("../images/seminar_list/main_visual_bg.jpg") center top no-repeat;
+			background-size: cover;
+			@include sp() {
+				height: auto;
+				padding: 8% 0;
+			}
+		}
+
+		&__company {
+			margin-bottom: 50px;
+			text-align: center;
+			@include sp() {
+				width: 80%;
+				margin: 0 auto 4%;
+			}
+		}
+
+		&__heading {
+			color: #FFF;
+			font-size: 50px;
+			font-weight: 700;
+			text-shadow: 0 0 6px #000;
+			text-align: center;
+			@include sp() {
+				@include fz_vw(26);
+			}
+		}
+
+		&__logo {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			width: 1100px;
+			height: 70px;
+			margin: auto;
+			@include sp() {
+				display: none;
+				width: auto;
+			}
+		}
+	}
+
+	.p-search {
+		&__heading {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 70px;
+			background: #0074C1;
+			text-align: center;
+			@include sp() {
+				height: auto;
+				padding: 3% 0 4%;
+			}
+
+			&__text {
+				position: relative;
+				color: #FFF;
+				font-size: 20px;
+				font-weight: 700;
+				cursor: pointer;
+				@include sp() {
+					@include fz_vw(14);
+				}
+
+				&:before,
+				&:after {
+					content: "";
+					position: absolute;
+				}
+
+				&:before {
+					left: -38px;
+					width: 22px;
+					height: 24px;
+					background: url("../images/seminar_list/icon_search.png") left top no-repeat;
+					@include sp() {
+						content: none;
+					}
+				}
+
+				&:after {
+					right: -38px;
+					width: 24px;
+					height: 24px;
+					background: url("../images/seminar_list/arrow_open.png") left top no-repeat;
+					@include sp() {
+						right: -20px;
+						top: 18%;
+						width: 12px;
+						height: 12px;
+						background: url("../images/seminar_list/arrow_open.png") left top no-repeat;
+						background-size: contain;
+					}
+				}
+
+				&.-is-open {
+					&:after {
+						background: url("../images/seminar_list/arrow_close.png") left top no-repeat;
+						@include sp() {
+							background: url("../images/seminar_list/arrow_close.png") left top no-repeat;
+							background-size: contain;
+						}
+					}
+				}
+			}
+		}
+
+		&__accordion {
+			display: none;
+			position: relative;
+			padding: 30px 0;
+			background: #0074C1;
+
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: 0;
+				width: 40px;
+				height: 2px;
+				margin: auto;
+				background: #FFF;
+			}
+		}
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			width: 800px;
+			margin: -18px auto 0;
+		}
+
+		&__item {
+			margin: 18px 25px 0 0;
+
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-width: 100px;
+				padding: 7px 25px 8px;
+				background: #FFF;
+				color: #0074C1;
+				font-size: 15px;
+				font-weight: 500;
+				border-radius: 6px;
+			}
+		}
+	}
+
+	.p-seminar {
+		padding: 100px 0 85px;
+		@include sp() {
+			padding: 12% 0 8%;
+		}
+
+		&:nth-of-type(odd) {
+			background: #e7f2fb;
+
+			.p-seminar__item__detail {
+				background: #FFF;
+			}
+		}
+
+		&.-pickup {
+			background: #5db2e2; /* Old browsers */
+			background: -moz-linear-gradient(top, #5db2e2 0%, #dbeeff 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #5db2e2 0%,#dbeeff 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #5db2e2 0%,#dbeeff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5db2e2', endColorstr='#dbeeff',GradientType=0 ); /* IE6-9 */
+		}
+
+		&__heading {
+			position: relative;
+			margin-bottom: 75px;
+			color: #0A4EA1;
+			font-family: $font_min;
+			font-size: 30px;
+			font-weight: bold;
+			text-align: center;
+			@include sp() {
+				margin-bottom: 10%;
+				@include fz_vw(20);
+			}
+
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: -30px;
+				width: 40px;
+				height: 4px;
+				margin: auto;
+				background: #90CAEB;
+				@include sp() {
+					bottom: -12px;
+					height: 2px;
+				}
+			}
+
+			&.-pickup {
+				color: #FFF;
+				font-size: 40px;
+				@include sp() {
+					@include fz_vw(24);
+				}
+
+				&:before {
+					content: "";
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: -43px;
+					width: 77px;
+					height: 24px;
+					margin: auto;
+					background: url("../images/seminar_list/seminar_heading_pickup_bg.png") left top no-repeat;
+					@include sp() {
+						top: -20px;
+						width: 38.5px;
+						height: 12px;
+						background: url("../images/seminar_list/seminar_heading_pickup_bg.png") left top no-repeat;
+						background-size: contain;
+					}
+				}
+
+				&:after {
+					background: #FFF;
+				}
+			}
+		}
+
+		&__list {
+			display: flex;
+			flex-wrap: wrap;
+			width: 1100px;
+			margin: -40px auto 0;
+			@include sp() {
+				width: 90%;
+				margin: -7% auto 0;
+			}
+		}
+
+		&__item {
+			width: 340px;
+			margin: 40px 40px 0 0;
+			@include sp() {
+				width: auto;
+				margin: 7% auto 0;
+			}
+
+			&:nth-child(3n) {
+				margin-right: 0;
+			}
+
+			&__detail {
+				padding: 20px 25px 25px;
+				background: #eff7fc;
+				@include sp() {
+					padding: 5%;
+				}
+			}
+
+			&__heading {
+				margin-bottom: 20px;
+				font-size: 18px;
+				font-weight: 700;
+				line-height: (22/18);
+				@include sp() {
+					margin-bottom: 4%;
+					@include fz_vw(18);
+				}
+			}
+
+			&__info {
+				margin-bottom: 20px;
+				font-size: 13px;
+				line-height: (21/13);
+				@include sp() {
+					margin-bottom: 4%;
+					@include fz_vw(13);
+				}
+			}
+
+			&__tag {
+				display: flex;
+				flex-wrap: wrap;
+				margin: -6px 0 18px 0;
+				@include sp() {
+					margin: -3% 0 6% 0;
+				}
+
+				&__text {
+					margin: 6px 6px 0 0;
+					padding: 3px 9px;
+					background: #FFF;
+					color: #0074C1;
+					font-size: 12px;
+					border-radius: 4px;
+					border: 1px solid #0074C1;
+					@include sp() {
+						margin: 3% 2% 0 0;
+						padding: 2% 4%;
+					}
+				}
+			}
+
+			&__link {
+				a {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					height: 40px;
+					background: #0074c1; /* Old browsers */
+					background: -moz-linear-gradient(left, #0074c1 0%, #68caef 100%); /* FF3.6-15 */
+					background: -webkit-linear-gradient(left, #0074c1 0%,#68caef 100%); /* Chrome10-25,Safari5.1-6 */
+					background: linear-gradient(to right, #0074c1 0%,#68caef 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0074c1', endColorstr='#68caef',GradientType=1 ); /* IE6-9 */
+					color: #FFF;
+					font-size: 13px;
+					font-weight: 700;
+					border-radius: 10px;
+					@include sp() {
+						height: auto;
+						padding: 5% 0;
+						@include fz_vw(14);
+					}
+				}
+			}
+		}
+
+		&__more {
+			width: 1100px;
+			margin: 55px auto 0;
+			@include sp() {
+				width: auto;
+				margin: 10% auto 5%;
+			}
+
+			&:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+
+			a {
+				float: right;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				position: relative;
+				width: 250px;
+				height: 40px;
+				padding-left: 10px;
+				color: #0074C1;
+				font-size: 14px;
+				font-weight: 700;
+				border-radius: 10px;
+				border: 2px solid #0074C1;
+				@include sp() {
+					float: none;
+					width: 80%;
+					margin: auto;
+					padding: 5%;
+					@include fz_vw(14);
+				}
+
+				&:before {
+					content: "";
+					position: absolute;
+					left: 50px;
+					top: 15px;
+					width: 8px;
+					height: 8px;
+					border-top: 3px solid #0074C1;
+					border-right: 3px solid #0074C1;
+					transform: rotate(45deg);
+					@include sp() {
+						left: 18%;
+						top: unset;
+					}
+				}
+			}
+		}
+	}
+}
