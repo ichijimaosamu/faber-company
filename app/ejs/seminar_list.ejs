@@ -4,8 +4,13 @@ var title = 'セミナー・イベント情報';
 %>
 @@include('app/ejs/_include/head.ejs')
 @@include('app/ejs/_include/header.ejs')
-@@include('app/ejs/_include/breadcrumb.ejs')
 
+<div class="p-topicpath">
+<ol class="p-topicpath__list">
+<li class="p-topicpath__item"><a href="https://mieru-ca.com/">トップ</a></li>
+<li class="p-topicpath__item"><a href="https://fabercompany.satori.site/seminar-information">セミナー一覧</a></li>
+</ol>
+</div>
 
 <main class="l-container">
 
@@ -255,7 +260,7 @@ var title = 'セミナー・イベント情報';
 </li>
 </ul>
 
-<p class="p-seminar__more"><a href="#">さらに詳しく見る</a></p>
+<p class="p-seminar__more"><a href="#"><span class="p-seminar__more__inner">さらに詳しく見る</span></a></p>
 
 </section>
 

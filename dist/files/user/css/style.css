@@ -7787,8 +7787,17 @@ category:
   #seminar-list .p-seminar__item {
     width: 340px;
     margin: 40px 40px 0 0; }
+    #seminar-list .p-seminar__item:hover img {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05); }
     #seminar-list .p-seminar__item:nth-child(3n) {
       margin-right: 0; }
+    #seminar-list .p-seminar__item__pic {
+      overflow: hidden; }
+      #seminar-list .p-seminar__item__pic img {
+        transition: -webkit-transform 0.2s linear;
+        transition: transform 0.2s linear;
+        transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
     #seminar-list .p-seminar__item__detail {
       padding: 20px 25px 25px;
       background: #eff7fc; }
@@ -7818,23 +7827,42 @@ category:
     #seminar-list .p-seminar__item__link a {
       display: -ms-flexbox;
       display: flex;
+      position: relative;
       -ms-flex-align: center;
       align-items: center;
       -ms-flex-pack: center;
       justify-content: center;
       height: 40px;
+      overflow: hidden;
       border-radius: 10px;
-      background: #0074c1;
-      /* Old browsers */
-      /* FF3.6-15 */
-      /* Chrome10-25,Safari5.1-6 */
-      background: linear-gradient(to right, #0074c1 0%, #68caef 100%);
-      /* IE6-9 */
       color: #FFF;
       font-size: 13px;
       font-weight: 700;
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0074c1', endColorstr='#68caef',GradientType=1 ); }
+      transition: all .3s;
+      z-index: 1; }
+      #seminar-list .p-seminar__item__link a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5A9ECD;
+        content: '';
+        z-index: -2; }
+      #seminar-list .p-seminar__item__link a:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #1981C7;
+        content: '';
+        transition: all .3s;
+        z-index: -1; }
+      #seminar-list .p-seminar__item__link a:hover {
+        opacity: 1; }
+        #seminar-list .p-seminar__item__link a:hover:before {
+          width: 100%; }
   #seminar-list .p-seminar__more {
     width: 1100px;
     margin: 55px auto 0; }
@@ -7843,23 +7871,46 @@ category:
       clear: both;
       content: ""; }
     #seminar-list .p-seminar__more a {
-      display: -ms-flexbox;
-      display: flex;
+      display: block;
       position: relative;
-      -ms-flex-align: center;
-      align-items: center;
-      -ms-flex-pack: center;
-      justify-content: center;
       width: 250px;
       height: 40px;
-      padding-left: 10px;
       float: right;
       border: 2px solid #0074C1;
       border-radius: 10px;
       color: #0074C1;
       font-size: 14px;
       font-weight: 700; }
-      #seminar-list .p-seminar__more a:before {
+      #seminar-list .p-seminar__more a:hover {
+        opacity: 1; }
+    #seminar-list .p-seminar__more__inner {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      border-radius: 10px;
+      transition: all .3s; }
+      #seminar-list .p-seminar__more__inner:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-radius: 6px;
+        background-color: #0074C1;
+        content: '';
+        transition: all .3s;
+        z-index: -1; }
+      #seminar-list .p-seminar__more__inner:hover {
+        opacity: 1; }
+        #seminar-list .p-seminar__more__inner:hover:before {
+          width: 100%; }
+      #seminar-list .p-seminar__more__inner:after {
         position: absolute;
         top: 15px;
         left: 50px;
@@ -7869,7 +7920,14 @@ category:
         transform: rotate(45deg);
         border-top: 3px solid #0074C1;
         border-right: 3px solid #0074C1;
-        content: ""; }
+        content: "";
+        transition: all .3s; }
+      #seminar-list .p-seminar__more__inner:hover {
+        color: #FFF;
+        opacity: 1; }
+        #seminar-list .p-seminar__more__inner:hover:after {
+          border-top-color: #FFF;
+          border-right-color: #FFF; }
 
 /* utility ----------------------------- */
 
@@ -8990,6 +9048,18 @@ category:
         #seminar-list .p-search__heading__text.-is-open:after {
           background: url("../images/seminar_list/arrow_close.png") left top no-repeat;
           background-size: contain; }
+    #seminar-list .p-search__accordion {
+      padding: 15px 0; }
+    #seminar-list .p-search__list {
+      width: 90%;
+      margin: -10px auto 0; }
+    #seminar-list .p-search__item {
+      margin: 10px 10px 0 0; }
+      #seminar-list .p-search__item a {
+        min-width: 50px;
+        padding: 8px 10px;
+        font-size: 12px;
+        font-size: 3.2vw; }
     #seminar-list .p-seminar {
       padding: 12% 0 8%; }
       #seminar-list .p-seminar__heading {
@@ -9017,6 +9087,7 @@ category:
         #seminar-list .p-seminar__item__detail {
           padding: 5%; }
         #seminar-list .p-seminar__item__heading {
+          display: none;
           margin-bottom: 4%;
           font-size: 18px;
           font-size: 4.8vw; }
@@ -9044,7 +9115,9 @@ category:
           float: none;
           font-size: 14px;
           font-size: 3.73333vw; }
-          #seminar-list .p-seminar__more a:before {
+        #seminar-list .p-seminar__more__inner {
+          overflow: visible; }
+          #seminar-list .p-seminar__more__inner:after {
             top: unset;
             left: 18%; }
   .is-pc {
