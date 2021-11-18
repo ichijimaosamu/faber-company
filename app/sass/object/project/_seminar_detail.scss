@@ -1,6 +1,11 @@
 .p-main-visual {
 	&__heading {
 		text-align: center;
+
+		img {
+			width:100%;
+			max-width:1000px;
+		}
 	}
 }
 
@@ -167,6 +172,7 @@
 	}
 
 	&__text {
+		max-width:624px;
 		padding: 70px 0;
 		font-size: 16px;
 		line-height: (28/16);
@@ -175,6 +181,11 @@
 			padding: 6% 4%;
 			@include fz_vw(14);
 			text-align: left;
+		}
+
+		a {
+			color: #0A4EA1;
+			text-decoration: underline;
 		}
 	}
 }
@@ -194,6 +205,10 @@
 		@include sp() {
 			width: 94%;
 			margin: -5% auto 0;
+		}
+
+		&.-one {
+			justify-content:center;
 		}
 	}
 
@@ -272,7 +287,7 @@
 
 	&__profile {
 		margin-bottom: 20px;
-		font-size: 13px;
+		font-size: 15px;
 		line-height: (23/13);
 		@include sp() {
 			margin-bottom: 4%;
@@ -283,7 +298,7 @@
 	&__achievement {
 		&__term {
 			margin-bottom: 8px;
-			font-size: 13px;
+			font-size: 15px;
 			font-weight: bold;
 			text-indent: -7px;
 			@include sp() {
@@ -298,7 +313,7 @@
 
 			a {
 				color: #0A4EA1;
-				font-size: 13px;
+				font-size: 15px;
 				line-height: 1.2;
 				text-decoration: underline;
 				@include sp() {
@@ -373,7 +388,7 @@
 		}
 
 		&__text {
-			font-size: 14px;
+			font-size: 16px;
 			line-height: (24/14);
 			@include sp() {
 				@include fz_vw(13);
