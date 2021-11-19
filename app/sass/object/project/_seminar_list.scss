@@ -396,8 +396,8 @@
 		}
 
 		&__more {
-			width: 1100px;
-			margin: 55px auto 0;
+			max-width: 550px;
+			margin: 86px auto 0;
 			@include sp() {
 				width: auto;
 				margin: 10% auto 5%;
@@ -411,15 +411,12 @@
 
 			a {
 				display: block;
-				float: right;
 				position: relative;
-				width: 250px;
-				height: 40px;
-				color: #0074C1;
-				font-size: 14px;
+				height: 56px;
+				color: #000;
+				font-size: 18px;
 				font-weight: 700;
 				border-radius: 10px;
-				border: 2px solid #0074C1;
 				@include sp() {
 					float: none;
 					width: 80%;
@@ -428,8 +425,37 @@
 					@include fz_vw(14);
 				}
 
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 0%;
+					height: 100%;
+					background-color: #e6b935;
+					transition: all .3s;
+					z-index: -1;
+					border-radius: 10px;
+				}
+
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: #ffcd3b;
+					z-index: -2;
+					border-radius: 10px;
+				}
+
 				&:hover {
 					opacity: 1;
+
+					&:before {
+						width: 100%;
+					}
 				}
 			}
 
@@ -446,35 +472,16 @@
 					overflow: visible;
 				}
 
-				&:before {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					width: 0%;
-					height: 100%;
-					background-color: #0074C1;
-					transition: all .3s;
-					z-index: -1;
-					border-radius: 6px;
-				}
-				&:hover {
-					opacity: 1;
-
-					&:before {
-						width: 100%;
-					}
-				}
 
 				&:after {
 					content: "";
 					position: absolute;
-					left: 50px;
-					top: 15px;
-					width: 8px;
-					height: 8px;
-					border-top: 3px solid #0074C1;
-					border-right: 3px solid #0074C1;
+					right: 30px;
+					top: 22px;
+					width: 12px;
+					height: 12px;
+					border-top: 3px solid #000;
+					border-right: 3px solid #000;
 					transform: rotate(45deg);
 					transition: all .3s;
 					@include sp() {
@@ -484,13 +491,7 @@
 				}
 
 				&:hover {
-					color: #FFF;
 					opacity: 1;
-
-					&:after {
-						border-top-color: #FFF;
-						border-right-color: #FFF;
-					}
 				}
 			}
 		}

@@ -23,7 +23,7 @@ category:
 .pagination {
 	width: 100%;
 	color: #009EBD;
-	
+
 	& {
 		@include ls(-500);
 		text-align: center;
@@ -66,5 +66,47 @@ category:
 		color: #fff;
 		border-color: #009EBD;
 		line-height: 26px;
+	}
+}
+
+.c-pagenavi{
+	text-align: center;
+	margin: 86px auto 0;
+
+	.wp-pagenavi{
+		display:inline-block;
+		font-weight: bold;
+		font-style: normal;
+		font-size:1.8rem;
+
+		a{
+			color:#fff;
+			text-decoration:none;
+			padding:2px 8px;
+			background-color: #000;
+		}
+		.page {
+			padding:2px 8px;
+			margin-right: .3rem;
+		}
+		.current{
+			color:#fff !important;
+			padding:2px 8px;
+			background-color: $color-grey;
+			margin-right: .3rem;
+		}
+		.previouspostslink{
+			margin-right: .3rem;
+			height:30px;
+		}
+		.nextpostslink{
+			height:30px;
+		}
+		.extend {
+			display: inline-block;
+			position: relative;
+			top: -5px;
+			margin-right: 0.3rem;
+		}
 	}
 }

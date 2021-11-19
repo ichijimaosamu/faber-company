@@ -6403,6 +6403,38 @@ category:
     color: #fff;
     line-height: 26px; }
 
+.c-pagenavi {
+  margin: 86px auto 0;
+  text-align: center; }
+  .c-pagenavi .wp-pagenavi {
+    display: inline-block;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: bold; }
+    .c-pagenavi .wp-pagenavi a {
+      padding: 2px 8px;
+      background-color: #000;
+      color: #fff;
+      text-decoration: none; }
+    .c-pagenavi .wp-pagenavi .page {
+      margin-right: .3rem;
+      padding: 2px 8px; }
+    .c-pagenavi .wp-pagenavi .current {
+      margin-right: .3rem;
+      padding: 2px 8px;
+      background-color: #707070;
+      color: #fff !important; }
+    .c-pagenavi .wp-pagenavi .previouspostslink {
+      height: 30px;
+      margin-right: .3rem; }
+    .c-pagenavi .wp-pagenavi .nextpostslink {
+      height: 30px; }
+    .c-pagenavi .wp-pagenavi .extend {
+      display: inline-block;
+      position: relative;
+      top: -5px;
+      margin-right: 0.3rem; }
+
 /*
 ---
 name: Selectbox (default)
@@ -7875,8 +7907,8 @@ category:
         #seminar-list .p-seminar__item__link a:hover:before {
           width: 100%; }
   #seminar-list .p-seminar__more {
-    width: 1100px;
-    margin: 55px auto 0; }
+    max-width: 550px;
+    margin: 86px auto 0; }
     #seminar-list .p-seminar__more:after {
       display: table;
       clear: both;
@@ -7884,16 +7916,36 @@ category:
     #seminar-list .p-seminar__more a {
       display: block;
       position: relative;
-      width: 250px;
-      height: 40px;
-      float: right;
-      border: 2px solid #0074C1;
+      height: 56px;
       border-radius: 10px;
-      color: #0074C1;
-      font-size: 14px;
+      color: #000;
+      font-size: 18px;
       font-weight: 700; }
+      #seminar-list .p-seminar__more a:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #e6b935;
+        content: '';
+        transition: all .3s;
+        z-index: -1; }
+      #seminar-list .p-seminar__more a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background-color: #ffcd3b;
+        content: '';
+        z-index: -2; }
       #seminar-list .p-seminar__more a:hover {
         opacity: 1; }
+        #seminar-list .p-seminar__more a:hover:before {
+          width: 100%; }
     #seminar-list .p-seminar__more__inner {
       display: -ms-flexbox;
       display: flex;
@@ -7906,39 +7958,20 @@ category:
       overflow: hidden;
       border-radius: 10px;
       transition: all .3s; }
-      #seminar-list .p-seminar__more__inner:before {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        height: 100%;
-        border-radius: 6px;
-        background-color: #0074C1;
-        content: '';
-        transition: all .3s;
-        z-index: -1; }
-      #seminar-list .p-seminar__more__inner:hover {
-        opacity: 1; }
-        #seminar-list .p-seminar__more__inner:hover:before {
-          width: 100%; }
       #seminar-list .p-seminar__more__inner:after {
         position: absolute;
-        top: 15px;
-        left: 50px;
-        width: 8px;
-        height: 8px;
+        top: 22px;
+        right: 30px;
+        width: 12px;
+        height: 12px;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
-        border-top: 3px solid #0074C1;
-        border-right: 3px solid #0074C1;
+        border-top: 3px solid #000;
+        border-right: 3px solid #000;
         content: "";
         transition: all .3s; }
       #seminar-list .p-seminar__more__inner:hover {
-        color: #FFF;
         opacity: 1; }
-        #seminar-list .p-seminar__more__inner:hover:after {
-          border-top-color: #FFF;
-          border-right-color: #FFF; }
 
 /* utility ----------------------------- */
 
