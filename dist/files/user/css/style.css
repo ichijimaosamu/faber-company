@@ -7437,6 +7437,7 @@ category:
 
 .p-recommend__text {
   max-width: 624px;
+  margin: auto;
   padding: 70px 0;
   font-size: 16px;
   line-height: 1.75;
