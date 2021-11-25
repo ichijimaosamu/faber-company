@@ -9221,7 +9221,7 @@ category:
         #seminar-list .p-seminar__more a {
           width: 80%;
           margin: auto;
-          padding: 5%;
+          padding: 5% 5% 5% 8%;
           float: none;
           font-size: 14px;
           font-size: 3.73333vw; }
@@ -9229,7 +9229,7 @@ category:
           overflow: visible; }
           #seminar-list .p-seminar__more__inner:after {
             top: unset;
-            left: 18%; }
+            left: 6%; }
       #seminar-list .p-seminar__moreRight {
         width: auto;
         margin: 10% auto 5%; }
@@ -9244,7 +9244,7 @@ category:
           overflow: visible; }
           #seminar-list .p-seminar__moreRight__inner:after {
             top: unset;
-            left: 18%; }
+            left: 10%; }
   .is-pc {
     display: none !important; }
   .is-sp {
