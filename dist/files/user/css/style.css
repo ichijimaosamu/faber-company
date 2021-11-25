@@ -7776,7 +7776,7 @@ category:
   padding: 100px 0 85px; }
   #seminar-list .p-seminar:nth-of-type(odd) {
     background: #e7f2fb; }
-    #seminar-list .p-seminar:nth-of-type(odd) .p-seminar__item__detail {
+    #seminar-list .p-seminar:nth-of-type(odd) .p-seminar__item {
       background: #FFF; }
   #seminar-list .p-seminar.-pickup {
     background: #5db2e2;
@@ -7789,7 +7789,7 @@ category:
     /* IE6-9 */ }
   #seminar-list .p-seminar__heading {
     position: relative;
-    margin-bottom: 75px;
+    margin-bottom: 95px;
     color: #0A4EA1;
     font-family: "Times New Roman", "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "メイリオ", Meiryo, serif;
     font-size: 30px;
@@ -7825,25 +7825,27 @@ category:
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 1100px;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 1140px;
     margin: -40px auto 0; }
   #seminar-list .p-seminar__item {
     width: 340px;
-    margin: 40px 40px 0 0; }
+    margin: 20px;
+    background: #eff7fc; }
     #seminar-list .p-seminar__item:hover img {
       -webkit-transform: scale(1.05);
       transform: scale(1.05); }
-    #seminar-list .p-seminar__item:nth-child(3n) {
-      margin-right: 0; }
     #seminar-list .p-seminar__item__pic {
       overflow: hidden; }
       #seminar-list .p-seminar__item__pic img {
+        width: 100%;
+        height: auto;
         transition: -webkit-transform 0.2s linear;
         transition: transform 0.2s linear;
         transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
     #seminar-list .p-seminar__item__detail {
-      padding: 20px 25px 25px;
-      background: #eff7fc; }
+      padding: 20px 25px 25px; }
     #seminar-list .p-seminar__item__heading {
       margin-bottom: 20px;
       font-size: 18px;
@@ -9173,7 +9175,7 @@ category:
     #seminar-list .p-seminar {
       padding: 12% 0 8%; }
       #seminar-list .p-seminar__heading {
-        margin-bottom: 10%;
+        margin-bottom: 15%;
         font-size: 20px;
         font-size: 5.33333vw; }
         #seminar-list .p-seminar__heading:after {
@@ -9189,11 +9191,13 @@ category:
             background: url("../images/seminar_list/seminar_heading_pickup_bg.png") left top no-repeat;
             background-size: contain; }
       #seminar-list .p-seminar__list {
+        display: block;
         width: 90%;
         margin: -7% auto 0; }
       #seminar-list .p-seminar__item {
         width: auto;
-        margin: 7% auto 0; }
+        margin: 7% auto 0;
+        padding: 0; }
         #seminar-list .p-seminar__item__detail {
           padding: 5%; }
         #seminar-list .p-seminar__item__heading {
