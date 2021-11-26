@@ -7825,8 +7825,6 @@ category:
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -ms-flex-pack: center;
-    justify-content: center;
     width: 1140px;
     margin: -40px auto 0; }
   #seminar-list .p-seminar__item {
