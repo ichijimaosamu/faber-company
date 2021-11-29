@@ -7843,12 +7843,20 @@ category:
         transition: transform 0.2s linear;
         transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
     #seminar-list .p-seminar__item__detail {
-      padding: 20px 25px 25px; }
+      position: relative;
+      height: 0;
+      padding: 20px 25px 225px; }
     #seminar-list .p-seminar__item__heading {
       margin-bottom: 20px;
       font-size: 18px;
       font-weight: 700;
       line-height: 1.22222; }
+    #seminar-list .p-seminar__item__inner {
+      position: absolute;
+      right: 0;
+      bottom: 25px;
+      left: 0;
+      padding: 0 25px; }
     #seminar-list .p-seminar__item__info {
       margin-bottom: 20px;
       font-size: 13px;
