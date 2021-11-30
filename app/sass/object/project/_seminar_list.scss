@@ -296,6 +296,7 @@
 				height: 0;
 				padding: 20px 25px 225px;
 				@include sp() {
+					height: auto;
 					padding: 5%;
 				}
 			}
@@ -318,6 +319,10 @@
 				left: 0;
 				right: 0;
 				padding: 0 25px;
+				@include sp() {
+					position: unset;
+					padding: 0;
+				}
 			}
 
 			&__info {

@@ -258,19 +258,22 @@
 
     /* セミナーカード内要素の高さを揃える
      ***************************************/
-     $('.p-seminar__item__heading').each(function() {
-       if ($(this).height() > 45 && $(this).height() < 66) {
-        $(this).parents('.p-seminar__item__detail').css('padding-bottom', '250px');
-        $(this).parents('.p-seminar__item').siblings().find('.p-seminar__item__detail').css('padding-bottom', '250px');
-       }
-      });
+     var windowWidth = $(window).width();
+     if (windowWidth > 768) {
+       $('.p-seminar__item__heading').each(function() {
+         if ($(this).height() > 45 && $(this).height() < 66) {
+          $(this).parents('.p-seminar__item__detail').css('padding-bottom', '250px');
+          $(this).parents('.p-seminar__item').siblings().find('.p-seminar__item__detail').css('padding-bottom', '250px');
+         }
+        });
 
-     $('.p-seminar__item__heading').each(function() {
-       if ($(this).height() > 67) {
-        $(this).parents('.p-seminar__item__detail').css('padding-bottom', '275px');
-        $(this).parents('.p-seminar__item').siblings().find('.p-seminar__item__detail').css('padding-bottom', '275px');
-       }
-      });
+       $('.p-seminar__item__heading').each(function() {
+         if ($(this).height() > 67) {
+          $(this).parents('.p-seminar__item__detail').css('padding-bottom', '275px');
+          $(this).parents('.p-seminar__item').siblings().find('.p-seminar__item__detail').css('padding-bottom', '275px');
+         }
+        });
+      }
 
     /* セミナータイトル文字数制限
 

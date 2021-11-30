@@ -9205,12 +9205,16 @@ category:
         margin: 7% auto 0;
         padding: 0; }
         #seminar-list .p-seminar__item__detail {
+          height: auto;
           padding: 5%; }
         #seminar-list .p-seminar__item__heading {
           display: none;
           margin-bottom: 4%;
           font-size: 18px;
           font-size: 4.8vw; }
+        #seminar-list .p-seminar__item__inner {
+          position: unset;
+          padding: 0; }
         #seminar-list .p-seminar__item__info {
           margin-bottom: 4%;
           font-size: 13px;
