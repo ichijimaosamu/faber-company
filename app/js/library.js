@@ -272,13 +272,6 @@
        }
       });
 
-     $('.p-seminar__item__heading').each(function() {
-       if ($(this).height() > 89) {
-        $(this).parents('.p-seminar__item__detail').css('padding-bottom', '300px');
-        $(this).parents('.p-seminar__item').siblings().find('.p-seminar__item__detail').css('padding-bottom', '300px');
-       }
-      });
-
     /* セミナータイトル文字数制限
 
      ***************************************/
