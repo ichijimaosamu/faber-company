@@ -8047,6 +8047,416 @@ category:
           border-top-color: #FFF;
           border-right-color: #FFF; }
 
+#seminar-thx .p-thx {
+  width: 1040px;
+  margin: 80px auto;
+  text-align: center; }
+  #seminar-thx .p-thx__heading {
+    margin-bottom: 50px;
+    color: #0B4BA3;
+    font-family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif;
+    font-size: 2.6rem;
+    font-weight: bold; }
+  #seminar-thx .p-thx__lead {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+    line-height: 1.5; }
+  #seminar-thx .p-thx__notice {
+    color: #717171;
+    font-size: 1.3rem; }
+    #seminar-thx .p-thx__notice a {
+      text-decoration: underline; }
+
+#seminar-thx .p-seminar {
+  padding: 0 0 60px; }
+  #seminar-thx .p-seminar__heading {
+    width: 1040px;
+    margin: 0 auto 60px;
+    padding: 0 0 3px 15px;
+    border-bottom: 1px solid #EFEFEF;
+    border-left: 5px solid #000;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 1; }
+  #seminar-thx .p-seminar__list {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 1070px;
+    margin: -40px auto 0; }
+  #seminar-thx .p-seminar__item {
+    width: 326.5px;
+    margin: 15px; }
+    #seminar-thx .p-seminar__item:hover img {
+      -webkit-transform: scale(1.05);
+      transform: scale(1.05); }
+    #seminar-thx .p-seminar__item__pic {
+      overflow: hidden; }
+      #seminar-thx .p-seminar__item__pic img {
+        width: 100%;
+        height: auto;
+        transition: -webkit-transform 0.2s linear;
+        transition: transform 0.2s linear;
+        transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+    #seminar-thx .p-seminar__item__detail {
+      position: relative;
+      height: 0;
+      padding: 20px 15px 225px; }
+      #seminar-thx .p-seminar__item__detail.-present {
+        height: auto;
+        padding-bottom: 0 !important; }
+    #seminar-thx .p-seminar__item__heading {
+      margin-bottom: 20px;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 1.22222; }
+    #seminar-thx .p-seminar__item__inner {
+      position: absolute;
+      right: 0;
+      bottom: 25px;
+      left: 0;
+      padding: 0 15px; }
+    #seminar-thx .p-seminar__item__info {
+      margin-bottom: 20px;
+      font-size: 13px;
+      line-height: 1.61538; }
+    #seminar-thx .p-seminar__item__tag {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin: -6px 0 18px 0; }
+      #seminar-thx .p-seminar__item__tag__text {
+        margin: 6px 6px 0 0;
+        padding: 3px 9px;
+        border: 1px solid #0074C1;
+        border-radius: 4px;
+        background: #FFF;
+        color: #0074C1;
+        font-size: 12px; }
+    #seminar-thx .p-seminar__item__link a {
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      height: 40px;
+      overflow: hidden;
+      border-radius: 10px;
+      color: #FFF;
+      font-size: 13px;
+      font-weight: 700;
+      transition: all .3s;
+      z-index: 1; }
+      #seminar-thx .p-seminar__item__link a:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #5A9ECD;
+        content: '';
+        z-index: -2; }
+      #seminar-thx .p-seminar__item__link a:before {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
+        background-color: #1981C7;
+        content: '';
+        transition: all .3s;
+        z-index: -1; }
+      #seminar-thx .p-seminar__item__link a:hover {
+        opacity: 1; }
+        #seminar-thx .p-seminar__item__link a:hover:before {
+          width: 100%; }
+  #seminar-thx .p-seminar__more {
+    width: 1040px;
+    margin: auto;
+    text-align: right; }
+    #seminar-thx .p-seminar__more.-present {
+      margin-top: 30px; }
+    #seminar-thx .p-seminar__more a {
+      color: #717171;
+      font-size: 1.6rem;
+      text-decoration: underline; }
+      #seminar-thx .p-seminar__more a:hover {
+        text-decoration: none; }
+
+#seminar-thx .p-service {
+  width: 1040px;
+  margin: 30px auto 200px; }
+  #seminar-thx .p-service * {
+    margin: 0; }
+  #seminar-thx .p-service__heading {
+    margin: 0 0 25px;
+    text-align: center; }
+    #seminar-thx .p-service__heading img {
+      width: 456px;
+      margin: auto; }
+  #seminar-thx .p-service__lead {
+    margin: 0 0 25px;
+    text-align: center; }
+    #seminar-thx .p-service__lead__wrapper {
+      display: inline-block;
+      padding: 12px 45px;
+      border-radius: 25px;
+      background: #EFEFEF;
+      font-size: 2.1rem;
+      line-height: 1; }
+  #seminar-thx .p-service__flex {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  #seminar-thx .p-service__box {
+    width: 500px;
+    margin: 90px 0 0;
+    border: 1px solid #C4C4C4; }
+    #seminar-thx .p-service__box.-mieruca {
+      position: relative;
+      width: 100%;
+      margin: 0; }
+    #seminar-thx .p-service__box__heading {
+      display: -ms-flexbox;
+      display: flex;
+      position: relative;
+      -ms-flex-pack: center;
+      justify-content: center;
+      padding: 15px 0 5px;
+      text-align: center; }
+      #seminar-thx .p-service__box__heading:before {
+        position: absolute;
+        top: -61px;
+        width: 445px;
+        height: 61px;
+        background: url("https://mieru-ca.com/blog/wp-content/themes/mmj/assets/images/service_box_heading_bg.gif") left top no-repeat;
+        content: ""; }
+      #seminar-thx .p-service__box__heading.-mieruca {
+        padding: 27px 0 8px;
+        border-bottom: 5px solid rgba(117, 180, 220, 0.1);
+        text-align: left; }
+        #seminar-thx .p-service__box__heading.-mieruca:before {
+          content: none; }
+        #seminar-thx .p-service__box__heading.-mieruca img {
+          position: unset;
+          margin: unset; }
+      #seminar-thx .p-service__box__heading.-heatmap {
+        border-bottom: 5px solid rgba(225, 101, 50, 0.1);
+        color: #EB552D; }
+      #seminar-thx .p-service__box__heading.-connect {
+        border-bottom: 5px solid rgba(69, 138, 166, 0.1);
+        color: #448CA7; }
+      #seminar-thx .p-service__box__heading.-local {
+        border-bottom: 5px solid rgba(54, 164, 164, 0.1);
+        color: #2FB0B0; }
+      #seminar-thx .p-service__box__heading.-douga {
+        border-bottom: 5px solid rgba(233, 85, 45, 0.1);
+        color: #F95532; }
+      #seminar-thx .p-service__box__heading.-seo {
+        border-bottom: 5px solid rgba(0, 0, 0, 0.1);
+        color: #1A252F; }
+      #seminar-thx .p-service__box__heading.-dekiruca {
+        border-bottom: 5px solid rgba(242, 196, 69, 0.1);
+        color: #ED8F00; }
+      #seminar-thx .p-service__box__heading img {
+        position: absolute;
+        top: -46px;
+        right: 0;
+        left: 0;
+        margin: auto; }
+      #seminar-thx .p-service__box__heading__text {
+        display: inline-block;
+        font-size: 2.8rem;
+        font-weight: 700;
+        line-height: 1.1; }
+        #seminar-thx .p-service__box__heading__text.-mieruca {
+          margin-left: 20px;
+          color: #75B4DC;
+          font-size: 3.6rem; }
+          #seminar-thx .p-service__box__heading__text.-mieruca small {
+            color: #75B4DC; }
+        #seminar-thx .p-service__box__heading__text.-heatmap {
+          color: #EB552D; }
+        #seminar-thx .p-service__box__heading__text.-connect {
+          color: #448CA7; }
+        #seminar-thx .p-service__box__heading__text.-local {
+          color: #2FB0B0; }
+        #seminar-thx .p-service__box__heading__text.-douga {
+          color: #F95532; }
+        #seminar-thx .p-service__box__heading__text.-seo {
+          color: #1A252F; }
+        #seminar-thx .p-service__box__heading__text.-dekiruca {
+          color: #ED8F00; }
+        #seminar-thx .p-service__box__heading__text small {
+          display: block;
+          margin-bottom: 5px;
+          color: #727272;
+          font-size: 1.2rem;
+          font-weight: 500; }
+    #seminar-thx .p-service__box__inner {
+      height: 190px;
+      padding: 12px 0 30px; }
+      #seminar-thx .p-service__box__inner.-mieruca {
+        height: auto;
+        padding: 20px 0 30px; }
+      #seminar-thx .p-service__box__inner.-heatmap, #seminar-thx .p-service__box__inner.-connect {
+        height: 220px; }
+    #seminar-thx .p-service__box__lead {
+      margin-bottom: 18px;
+      font-size: 1.3rem;
+      line-height: 1.23077;
+      text-align: center; }
+      #seminar-thx .p-service__box__lead.-mieruca {
+        font-size: 1.5rem;
+        line-height: 1; }
+    #seminar-thx .p-service__box__site {
+      padding: 15px 0; }
+      #seminar-thx .p-service__box__site.-mieruca {
+        background: #75B4DC; }
+        #seminar-thx .p-service__box__site.-mieruca a {
+          color: #75B4DC; }
+      #seminar-thx .p-service__box__site.-heatmap {
+        background: #EB552D; }
+        #seminar-thx .p-service__box__site.-heatmap a {
+          color: #EB552D; }
+      #seminar-thx .p-service__box__site.-connect {
+        background: #448CA7; }
+        #seminar-thx .p-service__box__site.-connect a {
+          color: #448CA7; }
+      #seminar-thx .p-service__box__site.-local {
+        background: #2FB0B0; }
+        #seminar-thx .p-service__box__site.-local a {
+          color: #2FB0B0; }
+      #seminar-thx .p-service__box__site.-douga {
+        background: #F95532; }
+        #seminar-thx .p-service__box__site.-douga a {
+          color: #F95532; }
+      #seminar-thx .p-service__box__site.-seo {
+        background: #1A252F; }
+        #seminar-thx .p-service__box__site.-seo a {
+          color: #1A252F; }
+      #seminar-thx .p-service__box__site.-dekiruca {
+        background: #ED8F00; }
+        #seminar-thx .p-service__box__site.-dekiruca a {
+          color: #ED8F00; }
+      #seminar-thx .p-service__box__site a {
+        display: -ms-flexbox;
+        display: flex;
+        position: relative;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        width: 360px;
+        height: 55px;
+        margin: auto;
+        border-radius: 8px;
+        background: #FFF;
+        font-size: 1.8rem;
+        font-weight: bold;
+        text-decoration: none;
+        transition: opacity 0.15s linear; }
+        #seminar-thx .p-service__box__site a:hover {
+          opacity: .8; }
+        #seminar-thx .p-service__box__site a svg {
+          width: 17px;
+          height: 17px;
+          margin-left: 11px; }
+          #seminar-thx .p-service__box__site a svg.-mieruca {
+            fill: #75B4DC; }
+          #seminar-thx .p-service__box__site a svg.-heatmap {
+            fill: #E16532; }
+          #seminar-thx .p-service__box__site a svg.-connect {
+            fill: #458AA6; }
+          #seminar-thx .p-service__box__site a svg.-local {
+            fill: #36A4A4; }
+          #seminar-thx .p-service__box__site a svg.-douga {
+            fill: #E9552D; }
+          #seminar-thx .p-service__box__site a svg.-seo {
+            fill: #000; }
+          #seminar-thx .p-service__box__site a svg.-dekiruca {
+            fill: #F2C445; }
+    #seminar-thx .p-service__box__flex {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-align: center;
+      align-items: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin: 0 20px; }
+      #seminar-thx .p-service__box__flex.-local, #seminar-thx .p-service__box__flex.-douga {
+        -ms-flex-align: unset;
+        align-items: unset; }
+    #seminar-thx .p-service__box__pic img.-heatmap {
+      width: 182px; }
+    #seminar-thx .p-service__box__pic img.-connect {
+      width: 152px; }
+    #seminar-thx .p-service__box__pic img.-local {
+      width: 174px; }
+    #seminar-thx .p-service__box__pic img.-douga {
+      width: 174px; }
+    #seminar-thx .p-service__box__pic img.-seo {
+      width: 175px; }
+    #seminar-thx .p-service__box__pic img.-dekiruca {
+      width: 164px; }
+  #seminar-thx .p-service__mieruca {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 680px;
+    margin: auto; }
+    #seminar-thx .p-service__mieruca__item {
+      width: 205px; }
+      #seminar-thx .p-service__mieruca__item__pic {
+        height: 130px;
+        margin-bottom: 20px; }
+        #seminar-thx .p-service__mieruca__item__pic img {
+          width: 100%;
+          height: auto; }
+      #seminar-thx .p-service__mieruca__item__term {
+        margin-bottom: 12px;
+        padding: 3px 0 4px;
+        background: #000;
+        color: #FFF;
+        font-size: 1.5rem;
+        line-height: 1;
+        text-align: center; }
+    #seminar-thx .p-service__mieruca__tag {
+      width: 220px;
+      margin: -6px 0 0 12px; }
+      #seminar-thx .p-service__mieruca__tag.-mieruca {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        width: auto;
+        margin: -6px 0 0; }
+      #seminar-thx .p-service__mieruca__tag__item {
+        display: inline-block;
+        margin-top: 6px;
+        padding: 5px 8px;
+        border-radius: 15px;
+        background: #EAEAEA;
+        font-size: 1.2rem;
+        letter-spacing: -0.2px;
+        line-height: 1;
+        text-align: center; }
+        #seminar-thx .p-service__mieruca__tag__item.-mieruca {
+          width: 48.5%;
+          font-size: 1.1rem; }
+        #seminar-thx .p-service__mieruca__tag__item.-w100 {
+          width: 100%; }
+
 /* utility ----------------------------- */
 
 .u-ma-0 {
@@ -9259,6 +9669,41 @@ category:
           #seminar-list .p-seminar__moreRight__inner:after {
             top: unset;
             left: 10%; }
+    #seminar-thx .p-seminar {
+      padding: 0 0 15%; }
+      #seminar-thx .p-seminar__list {
+        display: block;
+        width: 92%;
+        margin: -7% auto 0; }
+      #seminar-thx .p-seminar__item {
+        width: auto;
+        margin: 7% auto 0;
+        padding: 0; }
+        #seminar-thx .p-seminar__item__detail {
+          height: auto;
+          padding: 5%; }
+        #seminar-thx .p-seminar__item__heading {
+          display: none;
+          margin-bottom: 4%;
+          font-size: 18px;
+          font-size: 4.8vw; }
+        #seminar-thx .p-seminar__item__inner {
+          position: unset;
+          padding: 0; }
+        #seminar-thx .p-seminar__item__info {
+          margin-bottom: 4%;
+          font-size: 13px;
+          font-size: 3.46667vw; }
+        #seminar-thx .p-seminar__item__tag {
+          margin: -3% 0 6% 0; }
+          #seminar-thx .p-seminar__item__tag__text {
+            margin: 3% 2% 0 0;
+            padding: 2% 4%; }
+        #seminar-thx .p-seminar__item__link a {
+          height: auto;
+          padding: 5% 0;
+          font-size: 14px;
+          font-size: 3.73333vw; }
   .is-pc {
     display: none !important; }
   .is-sp {
@@ -9532,5 +9977,123 @@ category:
 @media screen and (max-width: 768px) and (max-width: 768px) {
     .p-request__form__item__name:first-of-type {
       margin-bottom: 5%; } }
+
+@media (max-width: 767px) {
+    #seminar-thx .p-thx {
+      width: auto;
+      margin: 10% 4%;
+      text-align: left; }
+      #seminar-thx .p-thx__heading {
+        margin-bottom: 8%;
+        text-align: center; }
+      #seminar-thx .p-thx__lead {
+        margin-bottom: 5%;
+        font-size: 1.3rem; }
+      #seminar-thx .p-thx__notice {
+        font-size: 1.2rem; }
+      #seminar-thx .p-seminar__heading {
+        width: 92%;
+        margin: 0 auto 10%;
+        padding: 0 0 1% 3%;
+        font-size: 1.6rem;
+        line-height: 1.11765; } }
+
+@media (min-width: 768px) {
+      #seminar-thx .p-seminar__heading br {
+        display: none; }
+          #seminar-thx .p-service__box__lead.-mieruca br {
+            display: none; } }
+
+@media screen and (max-width: 767px) {
+      #seminar-thx .p-seminar__more {
+        width: 92%;
+        margin: 5% auto 0; }
+    #seminar-thx .p-service {
+      width: 92%;
+      margin: 5% auto 10%; }
+      #seminar-thx .p-service__heading {
+        margin: 0 0 5%; }
+        #seminar-thx .p-service__heading img {
+          width: 90%; }
+      #seminar-thx .p-service__lead {
+        margin: 0 0 5%; }
+        #seminar-thx .p-service__lead__wrapper {
+          padding: 2% 2.5%;
+          font-size: 10px;
+          font-size: 2.66667vw; }
+      #seminar-thx .p-service__box {
+        width: auto;
+        margin: 8% 0 0; }
+          #seminar-thx .p-service__box__heading:before {
+            content: none; }
+          #seminar-thx .p-service__box__heading.-mieruca {
+            padding: 5% 0 3%; }
+            #seminar-thx .p-service__box__heading.-mieruca img {
+              width: 77px; }
+          #seminar-thx .p-service__box__heading.-heatmap img {
+            width: 13%; }
+          #seminar-thx .p-service__box__heading.-connect img {
+            width: 16%; }
+          #seminar-thx .p-service__box__heading.-local img {
+            width: 12%; }
+          #seminar-thx .p-service__box__heading.-douga img {
+            width: 13%; }
+          #seminar-thx .p-service__box__heading.-seo img {
+            width: 15%; }
+          #seminar-thx .p-service__box__heading.-dekiruca img {
+            width: 18%; }
+          #seminar-thx .p-service__box__heading img {
+            display: block;
+            position: unset;
+            width: auto;
+            margin: 0; }
+          #seminar-thx .p-service__box__heading__text {
+            margin: 0 0 0 3%;
+            font-size: 18px;
+            font-size: 4.8vw;
+            text-align: left; }
+            #seminar-thx .p-service__box__heading__text.-mieruca {
+              margin-left: 3%;
+              font-size: 26px;
+              font-size: 6.93333vw; }
+            #seminar-thx .p-service__box__heading__text small {
+              margin-bottom: 2%;
+              font-size: 10px;
+              font-size: 2.66667vw; }
+        #seminar-thx .p-service__box__inner {
+          height: auto;
+          padding: 4% 0 5%; }
+          #seminar-thx .p-service__box__inner.-mieruca {
+            padding: 5% 0; }
+          #seminar-thx .p-service__box__inner.-heatmap, #seminar-thx .p-service__box__inner.-connect {
+            height: auto; }
+        #seminar-thx .p-service__box__lead {
+          margin-bottom: 3%;
+          font-size: 11px;
+          font-size: 2.93333vw; }
+          #seminar-thx .p-service__box__lead.-mieruca {
+            font-size: 11px;
+            font-size: 2.93333vw; }
+          #seminar-thx .p-service__box__site a {
+            width: 80%;
+            height: 40px; }
+      #seminar-thx .p-service__box__pic {
+        width: 30%; }
+      #seminar-thx .p-service__box__pic img {
+        width: 100% !important; }
+      #seminar-thx .p-service__mieruca {
+        display: block;
+        width: auto; }
+        #seminar-thx .p-service__mieruca__item {
+          width: 80%;
+          margin: 0 auto 8%; }
+          #seminar-thx .p-service__mieruca__item__pic {
+            height: auto;
+            margin-bottom: 3%; }
+        #seminar-thx .p-service__mieruca__tag {
+          width: 60%; }
+          #seminar-thx .p-service__mieruca__tag__item {
+            font-size: 10px;
+            font-size: 2.66667vw; } }
 
 /*# sourceMappingURL=style.css.map */
